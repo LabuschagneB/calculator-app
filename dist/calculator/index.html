@@ -1,0 +1,40 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="utf-8">
+  <title>Calculator</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#1976d2">
+<style>:root{--bg-white:#edf1f4;--white:#fff;--rgba-dark:rgba(0, 0, 0, .1);--calc-shadow-white-after:rgba(255, 255, 255.073);--calc-shadow-white:15px 15px 20px var(--rgba-dark), -15px -15px 20px var(--calc-shadow-white-after);--value-blue:#5166d6;--value-shadow:inset 5px 5px 10px rgba(0, 0, 0, .1), inset -5px -5px 20px var(--white);--span-color:#666;--span-border:#edf1f4;--id-shadows:5px 5px 10px var(--rgba-dark), -5px -5px 10px var(--white), inset 5px 5px 10px var(--rgba-dark);--dark-color:#282c2f;--dark-background:#33393e}*{box-sizing:border-box;margin:0;padding:0;font-family:consolas}body{display:flex;justify-content:center;align-items:center;min-height:100vh;background:var(--bg-white)}.calculator{position:relative;width:340px;padding:20px;border-radius:20px;box-shadow:var(--calc-shadow-white)}.calculator .buttons{position:relative;display:grid}.calculator .buttons #value{position:relative;grid-column:span 4;-webkit-user-select:none;user-select:none;overflow:none;width:100%;text-align:end;color:var(--value-blue);height:100px;line-height:100px;box-shadow:var(--value-shadow);border-radius:10px;margin-bottom:12px;padding:0 20px;font-size:2em;font-weight:500}.calculator .buttons span{position:relative;padding:10px;margin:10px;cursor:pointer;-webkit-user-select:none;user-select:none;box-shadow:5px 5px 10px var(--rgba-dark),-5px -5px 20px var(--white);min-width:40px;display:flex;align-items:center;justify-content:center;font-size:1.2em;color:var(--span-color);border:2px solid var(--span-border);border-radius:10px}.calculator .buttons span:active{box-shadow:var(--value-shadow);color:#f44336}.calculator .buttons span#clear{background:#f44336;color:var(--white);grid-column:span 2;border:2px solid var(--span-border)}.calculator .buttons span#clear:active{box-shadow:var(--id-shadow)}.calculator .buttons span#plus{background:#31a935;color:var(--white);grid-row:span 2;border:2px solid var(--span-border)}.calculator .buttons span#plus:active{box-shadow:var(--id-shadow)}.calculator .buttons span#equal{background:#2196f3;color:var(--white);grid-column:span 2;border:2px solid var(--span-border)}.calculator .buttons span#equal:active{box-shadow:var(--id-shadow)}.toggleBtn{position:fixed;top:20px;right:20px;border-radius:50px;width:20px;height:20px;background:#555;cursor:pointer;border:2px solid var(--span-border);box-shadow:5px 5px 10px var(--rgba-dark),-5px -5px 10px var(--white)}@media (prefers-color-scheme: light){body{background:var(--bg-white)}body .calculator{position:relative;width:340px;padding:20px;border-radius:20px;box-shadow:var(--calc-shadow-white)}body .calculator .buttons{position:relative;display:grid}body .calculator .buttons #value{position:relative;grid-column:span 4;-webkit-user-select:none;user-select:none;overflow:none;width:100%;text-align:end;color:var(--value-blue);height:100px;line-height:100px;box-shadow:var(--value-shadow);border-radius:10px;margin-bottom:12px;padding:0 20px;font-size:2em;font-weight:500}body .calculator .buttons span{position:relative;padding:10px;margin:10px;cursor:pointer;-webkit-user-select:none;user-select:none;box-shadow:5px 5px 10px var(--rgba-dark),-5px -5px 20px var(--white);min-width:40px;display:flex;align-items:center;justify-content:center;font-size:1.2em;color:var(--span-color);border:2px solid var(--span-border);border-radius:10px}body .calculator .buttons span:active{box-shadow:var(--value-shadow);color:#f44336}body .calculator .buttons span#clear{background:#f44336;color:var(--white);grid-column:span 2;border:2px solid var(--span-border)}body .calculator .buttons span#clear:active{box-shadow:var(--id-shadow)}body .calculator .buttons span#plus{background:#31a935;color:var(--white);grid-row:span 2;border:2px solid var(--span-border)}body .calculator .buttons span#plus:active{box-shadow:var(--id-shadow)}body .calculator .buttons span#equal{background:#2196f3;color:var(--white);grid-column:span 2;border:2px solid var(--span-border)}body .calculator .buttons span#equal:active{box-shadow:var(--id-shadow)}body .toggleBtn{position:fixed;top:20px;right:20px;border-radius:50px;width:20px;height:20px;background:#555;cursor:pointer;border:2px solid var(--span-border);box-shadow:5px 5px 10px var(--rgba-dark),-5px -5px 10px var(--white)}}</style><link rel="stylesheet" href="styles.31c48fc9c77b8291.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.31c48fc9c77b8291.css"></noscript></head>
+
+<body>
+  <app-root></app-root>
+  <noscript>Please enable JavaScript to continue using this application.</noscript>
+  <div class="toggleBtn"></div>
+  <div class="calculator">
+    <div class="buttons">
+      <h2 id="value"></h2>
+      <span id="clear">Clear</span>
+      <span>/</span>
+      <span>*</span>
+      <span>7</span>
+      <span>8</span>
+      <span>9</span>
+      <span>-</span>
+      <span>4</span>
+      <span>5</span>
+      <span>6</span>
+      <span id="plus">+</span>
+      <span>1</span>
+      <span>2</span>
+      <span>3</span>
+      <span>0</span>
+      <span>.</span>
+      <span id="equal">=</span>
+    </div>
+  </div>
+  <script src="./assets/calc.js"></script>
+<script src="runtime.a5cffece3c1b92fa.js" type="module"></script><script src="polyfills.8068a02d35f4256f.js" type="module"></script><script src="main.ecb423ee88d7c439.js" type="module"></script>
+
+</body></html>
