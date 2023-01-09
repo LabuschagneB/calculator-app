@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Calculator
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
@@ -27,5 +26,4 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 =======
-# calculator-app
->>>>>>> 7c3f2615bc14b1d606993df1c01406efb566f32a
+
